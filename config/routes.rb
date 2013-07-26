@@ -1,4 +1,7 @@
 NgPhotogur::Application.routes.draw do
+  
+  root :to => 'homepage#root'
+
   namespace :api do
     namespace :v1 do
       resources :pictures
