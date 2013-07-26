@@ -1,12 +1,15 @@
 NgPhotogur::Application.routes.draw do
   
-  root :to => 'homepage#root'
 
   namespace :api do
     namespace :v1 do
       resources :pictures
     end
   end
+
+  root :to => "homepage#root"
+  match '*anything' => "homepage#root"
+  
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

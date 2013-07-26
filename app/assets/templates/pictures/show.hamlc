@@ -1,0 +1,5 @@
+%a{ng: {href: "../pictures/" } } Back
+%a{ng: {href: "{{id}}/edit/"}} Edit
+%h1 {{ picture.title }}
+%h2 by {{ picture.artist }}
+%img{:"ng-src" => "{{picture.url}}" }

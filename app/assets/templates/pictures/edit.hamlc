@@ -1,0 +1,14 @@
+%h1 {{ picture.title}}
+%p by {{picture.artist}}
+%img{:"ng-src" => "{{picture.url}}"}
+%br
+%label{for: "picture.title"} Tytul
+%input{:"ng-model" => "picture.title", :id => "picture.title"}
+%br
+%label{for: "Artist" } Artysta
+%input{:"ng-model" => "picture.artist", :id => "Artist"}
+%br
+%label{for: "picture.url" } URL
+%input{:"ng-model" => "picture.url", :id => "picture.url"}
+%br
+%button{:"ng-click" => "updatePicture()"} SUBMIT

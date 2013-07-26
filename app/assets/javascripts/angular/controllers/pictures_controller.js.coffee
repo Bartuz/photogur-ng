@@ -1,6 +1,7 @@
-@photogur.controller 'PicturesController', ($scope, Pictures) ->
-	$scope.pictures = Pictures
+@photogur.controller 'PicturesController', ($scope, Pictures, $location) ->
+  
+  $scope.pictures = Pictures
 
-	$scope.createPicture = ->
-		Pictures.push $scopre.picture
-		$location.path('/pictures')
+  $scope.createPicture = ->
+    Pictures.push $scope.picture
+    $location.path('/pictures')
