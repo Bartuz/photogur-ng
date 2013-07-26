@@ -5,7 +5,7 @@
 %a{:href => "/pictures/new"} New Picture
 
 .picture{:"ng-repeat" => "picture in pictures"}
-  %a{href: "pictures/{{ $index }}"}
+  %a{href: "pictures/{{ $index+1 }}"}
     %h2 {{picture.title}}
   
   %img{:src => "{{picture.url}}"}
